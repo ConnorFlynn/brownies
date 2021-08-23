@@ -12,3 +12,26 @@ dessert_listing <- dessert_elements %>%
   head(.,-3) %>% # 3 last ones were not desserts
   rowid_to_column("rank") %>% # adding a column using the row number as proxy for the rank
   write_csv("iconic_desserts.csv") # save it as csv
+
+
+iconic <- function(dessert) {
+  if(dessert == "brownies")
+    return("your favorite desert is iconic")
+  else if(!desert == "brownies")
+    return("your favorite desert is not iconic")
+}
+
+iconic("brownies")
+
+
+
+
+for(i in seq_along(favorite_desserts$Favorite_dessert)) {
+  if(favorite_desserts$Favorite_dessert %in% dessert_listing$dessert)
+    print(paste("Your favorite desert is iconic"))
+  else(
+    print(paste("Your faorite desert is not even close to iconic")))
+  }
+
+
+
