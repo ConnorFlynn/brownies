@@ -37,3 +37,6 @@ find_dessert <- function(name) {
 }
 
 find_dessert("Connor")
+
+
+connor_change <- 7
