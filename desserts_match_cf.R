@@ -1,5 +1,6 @@
 library(tidyverse)
 library(rvest)
+library(tibble)
 
 
 webpage <- read_html("https://www.eatthis.com/iconic-desserts-united-states/")
@@ -14,24 +15,25 @@ dessert_listing <- dessert_elements %>%
   write_csv("iconic_desserts.csv") # save it as csv
 
 
-iconic <- function(dessert) {
-  if(dessert == "brownies")
-    return("your favorite desert is iconic")
-  else if(!desert == "brownies")
-    return("your favorite desert is not iconic")
-}
-
-iconic("brownies")
 
 
+our_desserts <- tribble(~first_name, ~last_name, ~desserts,
+                        "Connor", "Flynn", "Brownies",
+                        "Charles", "Hendrickson", "Spring Rolls")
 
 
-for(i in seq_along(favorite_desserts$Favorite_dessert)) {
-  if(favorite_desserts$Favorite_dessert %in% dessert_listing$dessert)
+for(i in seq_along(our_desserts$desserts)) {
+  if(our_desserts$desserts[i] %in% dessert_listing$dessert)
     print(paste("Your favorite desert is iconic"))
   else(
-    print(paste("Your faorite desert is not even close to iconic")))
-  }
+    print(paste("Your favorite desert is not iconic"))
+  )
+}
 
 
+find_dessert <- function(name) {
+  fav_dessert <- filter(our_desserts, name == first_name)
+  return(fav_dessert$desserts)
+}
 
+find_dessert("Connor")
