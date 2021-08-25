@@ -41,7 +41,7 @@ find_dessert("Connor")
 
 
 
-x <- "charles"
+z <- "charles"
 
 connor_change <- 7
 
