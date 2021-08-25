@@ -45,8 +45,14 @@ x <- "charles"
 
 connor_change <- 7
 
+
+Connor_fav <- "brownies"
+
 connor_change_taylor <- 8
 
 connor_update_token <- 9
 
+<<<<<<< HEAD
 connor_taylor_token_check <- 10
+=======
+>>>>>>> 92fca04d45e320d09beee309431323ae3593bc93
