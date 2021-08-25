@@ -45,3 +45,4 @@ x <- "charles"
 
 connor_change <- 7
 
+Connor_fav <- "brownies"
