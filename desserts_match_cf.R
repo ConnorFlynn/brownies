@@ -48,3 +48,5 @@ connor_change <- 7
 connor_change_taylor <- 8
 
 connor_update_token <- 9
+
+connor_taylor_token_check <- 10
