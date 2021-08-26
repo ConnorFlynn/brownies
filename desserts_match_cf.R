@@ -57,3 +57,4 @@ connor_taylor_token_check <- 10
 
 connor_taylor_token_check_2 <- "mayhem 7"
 
+connor_taylor_token_check_3 <- "revelation"
